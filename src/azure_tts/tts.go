@@ -38,7 +38,8 @@ func (az *AzureCSTextToSpeech) SynthesizeWithContext(ctx context.Context, speech
 	}
 	request.Header.Set("X-Microsoft-OutputFormat", fmt.Sprint(audioOutput))
 	request.Header.Set("Content-Type", "application/ssml+xml")
-	request.Header.Set("Authorization", "Bearer "+az.accessToken)
+	//request.Header.Set("Authorization", "Bearer "+az.accessToken)
+	request.Header.Set("Ocp-Apim-Subscription-Key", az.SubscriptionKey)
 	request.Header.Set("User-Agent", "azuretts")
 
 	client := &http.Client{}
@@ -147,9 +148,9 @@ func New(subscriptionKey string, region Region) (*AzureCSTextToSpeech, error) {
 
 	// api requires that the token is refreshed every 10 mintutes.
 	// We will do this task in the background every ~9 minutes.
-	if err := az.refreshToken(); err != nil {
-		return nil, fmt.Errorf("failed to fetch initial token, %v", err)
-	}
+	//if err := az.refreshToken(); err != nil {
+	//	return nil, fmt.Errorf("failed to fetch initial token, %v", err)
+	//}
 
 	return az, nil
 }
