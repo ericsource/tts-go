@@ -35,8 +35,7 @@ func main() {
 	}
 
 	if *listVoices {
-		//tts, err := azure_tts.New("xxxx", azure_tts.RegionEastUS)
-		tts, err := azure_tts.New("891b07b2b0534ef8b27599299e461645", azure_tts.RegionEastUS)
+		tts, err := azure_tts.New("xxxx", azure_tts.RegionEastUS)
 		if err != nil {
 			fmt.Printf("Failed to new azure tts: %v\n", err)
 			return
@@ -59,8 +58,7 @@ func main() {
 
 	if len(*text) > 0 {
 		//fmt.Println(*text)
-		//tts, err := azure_tts.New("xxxx", azure_tts.RegionEastUS)
-		tts, err := azure_tts.New("891b07b2b0534ef8b27599299e461645", azure_tts.RegionEastUS)
+		tts, err := azure_tts.New("xxxx", azure_tts.RegionEastUS)
 		if err != nil {
 			fmt.Printf("Failed to new azure tts: %v\n", err)
 			return
