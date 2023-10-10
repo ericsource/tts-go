@@ -13,6 +13,7 @@ import (
 // The following are V1 endpoints for Cognitiveservices endpoints
 const textToSpeechAPI = "https://%s.tts.speech.microsoft.com/cognitiveservices/v1"
 const tokenRefreshAPI = "https://%s.api.cognitive.microsoft.com/sts/v1.0/issueToken"
+const voiceListAPI = "https://%s.tts.speech.microsoft.com/cognitiveservices/voices/list"
 
 // synthesizeActionTimeout is the amount of time the http client will wait for a response during Synthesize request
 const synthesizeActionTimeout = time.Second * 30
