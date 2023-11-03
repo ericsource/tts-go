@@ -14,3 +14,7 @@ go run example/azure_tts.go --list-voices --locale=en-US --gender=Female
 
 go run example/azure_tts.go --text="good boy"
 ```
+
+```go
+import "github.com/ericsource/tts-go/src/edge_tts"
+```
