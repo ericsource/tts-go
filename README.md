@@ -5,6 +5,7 @@ A Go library for Azure's Cognitive Services tts API and Use Microsoft Edge's onl
 go run example/edge_tts.go --version
 
 go run example/edge_tts.go --text="good boy"
+go run example/edge_tts.go --proxy=socks5://127.0.0.1:7890 --text="good boy"
 ```
 
 ```bash
