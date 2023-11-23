@@ -17,5 +17,10 @@ go run example/azure_tts.go --text="good boy"
 ```
 
 ```go
+package main
+
 import "github.com/ericsource/tts-go/src/edge_tts"
+
+func main() {
+}
 ```
