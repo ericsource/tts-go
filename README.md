@@ -24,7 +24,6 @@ import (
 	"fmt"
 	"github.com/ericsource/tts-go/src/azure_tts"
 	"github.com/spf13/pflag"
-	"os"
 )
 
 func main() {
