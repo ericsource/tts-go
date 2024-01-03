@@ -19,6 +19,13 @@ go run example/azure_tts.go --text="good boy"
 ```go
 package main
 
+func usage() {
+	fmt.Println("usage: edge-tts [-h] [-t TEXT] [-f FILE] [-v VOICE] [-l] [--rate RATE] [--volume VOLUME] [--words-in-cue WORDS_IN_CUE] [--write-media WRITE_MEDIA] [--write-subtitles WRITE_SUBTITLES] [--proxy PROXY]\n")
+	fmt.Println("Microsoft Edge TTS\n")
+	fmt.Println("options:")
+	pflag.PrintDefaults()
+}
+
 import (
 	"context"
 	"fmt"
