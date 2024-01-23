@@ -34,6 +34,6 @@ import (
 )
 
 func main() {
-	
+	listVoices := pflag.BoolP("list-voices", "l", false, "lists available voices and exits")
 }
 ```
