@@ -38,5 +38,7 @@ func main() {
 	locale := pflag.StringP("locale", "", "en-US", "locale for voice lists ex: zh-CN, en-US")
 	gender := pflag.StringP("gender", "", "", "gender for voice lists ex: Male, Female")
 	text := pflag.StringP("text", "t", "", "what TTS will say")
+	file := pflag.StringP("file", "f", "", "same as --text but read from file")
+	voice := pflag.StringP("voice", "v", "zh-CN-XiaoxiaoNeural", "voice for TTS")
 }
 ```
